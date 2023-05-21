@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "c5b54835-dafb-4b1e-96d3-a80a2d7d3fa7",
+		"name": "Karywan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "13229885"
+	},
+	"item": [
+		{
+			"name": "Listing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{http}}:{{port}}/api/karyawan"
+			},
+			"response": []
+		},
+		{
+			"name": "Get By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{http}}:{{port}}/api/karyawan/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"aaaaa\",\r\n    \"last_name\": \"aaaaa\",\r\n    \"email\": \"aaaa@gmail.com\",\r\n    \"address\": \"Jadsaa\",\r\n    \"inactive\": \"Y\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{http}}:{{port}}/api/karyawan"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"aaaaa\",\r\n    \"last_name\": \"aaaaaaasa\",\r\n    \"email\": \"aaaaaaa@gmail.com\",\r\n    \"address\": \"aaaaa\",\r\n    \"inactive\": \"N\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{http}}:{{port}}/api/karyawan/6"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{http}}:{{port}}/api/karyawan"
+			},
+			"response": []
+		}
+	]
+}
